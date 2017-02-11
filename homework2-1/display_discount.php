@@ -1,5 +1,5 @@
-<?php>
-$product_discription = filter_input(INPUT_POST, 'product_discription');
+<?php
+$product_description = filter_input(INPUT_POST, 'product_description');
 $list_price = filter_input(INPUT_POST, 'list_price');
 $discount_percent= filter_input(INPUT_POST, 'discount_percent');
 
@@ -7,10 +7,10 @@ $discount=$list_price * $discount_percent * 0.1;
 
 $discount_price = $list_price - $discount;
 
-$list_price_f = "$".number_format($list_price,2);
-$discount_percent_f = $discount_percent."%";
-$discount_f =" $".number_format($discount,2);
-$discount_price_f= "$".number_format($discount_price,2);
+$list_price_f = "$".number_format($list_price, 2);
+$discount_percent_f = $discount_percent. "%";
+$discount_f =" $".number_format($discount, 2);
+$discount_price_f= "$".number_format($discount_price, 2);
 
 
 ?>
@@ -24,12 +24,10 @@ $discount_price_f= "$".number_format($discount_price,2);
 </head>
 <body>
     <main>
-        <h1>This page is under construction</h1>
+        <h1>Product Discount Calculator</h1>
 
         <label>Product Description:</label>
-       
-
-	<span><?php echo htmlspecialchars($product_description); ?></span><br>
+       <span><?php echo htmlspecialchars($product_description); ?></span><br>
 
 
         <label>List Price:</label>
@@ -46,4 +44,5 @@ $discount_price_f= "$".number_format($discount_price,2);
        	<span><?php echo $discount_price_f; ?></span><br>
     </main>
 </body>
+
 </html>
