@@ -1,7 +1,7 @@
 <?php>
-$product_discription = $_POST['product_discription'];
-$list_price = $_POST['list_price'];
-$discount_percent= $_POST['discount_percent'];
+$product_discription = filter_Input(INPUT_POST, 'product_discription');
+$list_price = filter_input(INPUT_POST, 'list_price');
+$discount_percent= filter_input(INPUT_POST,'discount_percent');
 
 ?>
 
@@ -26,7 +26,8 @@ $discount_percent= $_POST['discount_percent'];
         <label>Standard Discount:</label>
         <span><?php echo $discount_percent; ?></span><br>
 
-        <label>Discount Amount:</label>
+        
+	<label>Discount Amount:</label>
         <span><?php echo ''; ?></span><br>
 
         <label>Discount Price:</label>
