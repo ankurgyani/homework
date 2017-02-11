@@ -7,10 +7,10 @@ $discount=$list_price * $discount_percent * 0.1;
 
 $discount_price = $list_price - $discount;
 
-$list_price_formatted = "$".number_format($list_price,2);
-$discount_percent_formatted = $discount_percent."%";
-$discount_formatted =" $".number_format($discount,2);
-$discount_price_formatted= "$".number_format($discount_price,2);
+$list_price_f = "$".number_format($list_price,2);
+$discount_percent_f = $discount_percent."%";
+$discount_f =" $".number_format($discount,2);
+$discount_price_f= "$".number_format($discount_price,2);
 ?>
 
 <!DOCTYPE html>
@@ -31,18 +31,19 @@ $discount_price_formatted= "$".number_format($discount_price,2);
 
 
         <label>List Price:</label>
-        <span><?php echo $list_price_formatted; ?></span><br>
+        <span><?php echo $list_price_f; ?></span><br>
 
         <label>Standard Discount:</label>
-        <span><?php echo $discount_percent_formatted; ?></span><br>
+        <span><?php echo $discount_percent_f; ?></span><br>
 
         
 	<label>Discount Amount:</label>
-        <span><?php echo $discount_formatted; ?></span><br>
+        <span><?php echo $discount_f; ?></span><br>
 
         <label>Discount Price:</label>
-        
-	<span><?php echo $discount_price_formatted; ?></span><br>
+       
+
+	<span><?php echo $discount_price_f; ?></span><br>
     </main>
 </body>
 </html>
