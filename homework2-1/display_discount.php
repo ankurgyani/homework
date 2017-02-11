@@ -16,7 +16,7 @@ $discount_price_f= "$".number_format($discount_price, 2);
 ?>
 
 <!DOCTYPE html>
->
+
 <html>
 <head>
     <title>Product Discount Calculator</title>
